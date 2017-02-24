@@ -2,17 +2,29 @@
 
 # Used to download PDF files from http://www.allitebooks.com/
 
+Domain="http://www.allitebooks.com/"
+Catergory="programming"
+SubCategory="c"
 
-Prefix="http://www.allitebooks.com/programming/c/page/"
+Prefix="${Domain}/${Catergory}/${SubCategory}/page/"
 
+# PageLimit means pages need to wget of each category
+# It can be set to a large number, program will terminate when wget meets error.
 PageLimit=1000
-MoveLimit=100
-Count=0
-SleepGap=1s
+SleepGap=1s # for avoiding being forbidden.
 
-TempFiles=`pwd`"/tempfiles/"
-PDFFolder=`pwd`"/PDFFiles/"
+TempFiles=`pwd`"/tempfiles/" # store temporary files
+PDFFolder=`pwd`"/PDFFiles/"  # store pdf files
+
+# Used to track all books downloaded.
 BooksCollection="Books"
+
+# TargetDir: Directory to move pdfs when storage is not enough.
+# !Note!: It is the final folder we store pdf files.
+# Currently, we use count of books to decide whether a move is needed.
+Count=0
+MoveLimit=100
+TargetDir="/home/yang/computer/PDFFiles/"
 
 mkdir -p ${TempFiles}
 mkdir -p ${PDFFolder}
@@ -51,7 +63,6 @@ do
 		if [ ${Count} -eq ${MoveLimit} ]
 		then
 			echo "[Notice] Moving files to Disk"
-			TargetDir="/home/yang/computer/PDFFiles/"
 			mkdir -p ${TargetDir}
 			rename -f 's/ /-/g' ${PDFFolder}/*.pdf
 			mv ${PDFFolder}/*.pdf ${TargetDir}
@@ -67,6 +78,7 @@ done
 rename -f 's/ /-/g' ${PDFFolder}/*.pdf
 mv ${PDFFolder}/*.pdf ${TargetDir}
 
+# Garbage collection
 rm -rf ${TempFiles}
 rm -rf ${PDFFolder}
 
