@@ -2,5 +2,5 @@ These repository contains different spiders that I used to download interesting 
 
 Currently Support:
 
-+ [Jiuzhang Algorithm](www.jiuzhang.com)
-+ [AllItEbooksInfo](www.allitebooksinfo)
++ [Jiuzhang Algorithm](http://www.jiuzhang.com)
++ [AllItEbooks](http://www.allitebooks.com)
