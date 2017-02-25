@@ -4,3 +4,6 @@ Currently Support:
 
 + [Jiuzhang Algorithm](http://www.jiuzhang.com)
 + [AllItEbooks](http://www.allitebooks.com)
+
+=== Note that
++ All the softwares are for testing and hacking purpose, not for commercial useage.

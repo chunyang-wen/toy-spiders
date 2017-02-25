@@ -1,8 +1,11 @@
 #!/bin/sh
+# Author: Chunyang Wen(chunyang.wen@gmail.com)
 
 # Used to download PDF files from http://www.allitebooks.com/
 
 Domain="http://www.allitebooks.com/"
+# If Category and SubCategory is Empty, we try to download all books.
+# Category and SubCategory can be get from the homepage. Be smart and find them yourself.
 Catergory="programming"
 SubCategory="c"
 
@@ -13,21 +16,23 @@ Prefix="${Domain}/${Catergory}/${SubCategory}/page/"
 PageLimit=1000
 SleepGap=1s # for avoiding being forbidden.
 
-TempFiles=`pwd`"/tempfiles/" # store temporary files
-PDFFolder=`pwd`"/PDFFiles/"  # store pdf files
+TempFiles=`pwd`"/${Catergory}/${SubCategory}/tempfiles/" # store temporary files
+PDFFolder=`pwd`"/${Catergory}/${SubCategory}/PDFFiles/"  # store pdf files
 
 # Used to track all books downloaded.
 BooksCollection="Books"
+BooksCollectionFailed="BooksFailed"
 
 # TargetDir: Directory to move pdfs when storage is not enough.
 # !Note!: It is the final folder we store pdf files.
 # Currently, we use count of books to decide whether a move is needed.
 Count=0
-MoveLimit=100
-TargetDir="/home/yang/computer/PDFFiles/"
+MoveLimit=10
+TargetDir="/home/yang/computer/PDFFiles/${Catergory}/${SubCategory}/"
 
 mkdir -p ${TempFiles}
 mkdir -p ${PDFFolder}
+mkdir -p ${TargetDir}
 
 for i in `seq 1 $PageLimit`
 do
@@ -52,12 +57,15 @@ do
 		echo "[Notice] Retrive download URL: ${DownloadURL}"
 		sleep ${SleepGap}
 		FileName=`basename "${DownloadURL}"`
-		echo ${FileName%.pdf} >> ${BooksCollection}
 		echo "[Notice] Downloading ${FileName}"
 		wget -q "${DownloadURL}" -O "${PDFFolder}/${FileName}"
 		if [ $? -ne 0 ]
 		then
 			echo "[Error] Downloading ${FileName}"
+			echo ${FileName%.pdf} >> ${BooksCollectionFailed}
+
+		else
+			echo ${FileName%.pdf} >> ${BooksCollection}
 		fi
 		((Count++))
 		if [ ${Count} -eq ${MoveLimit} ]
@@ -76,7 +84,10 @@ do
 done
 
 rename -f 's/ /-/g' ${PDFFolder}/*.pdf
-mv ${PDFFolder}/*.pdf ${TargetDir}
+if [ `ls ${PDFFolder} | wc -l` -ne 0 ]
+then
+	mv ${PDFFolder}/*.pdf ${TargetDir}
+fi
 
 # Garbage collection
 rm -rf ${TempFiles}
