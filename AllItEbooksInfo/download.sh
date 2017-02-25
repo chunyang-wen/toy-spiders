@@ -71,7 +71,8 @@ do
 		if [ ${Count} -eq ${MoveLimit} ]
 		then
 			echo "[Notice] Moving files to Disk"
-			mkdir -p ${TargetDir}
+			# remove watermark
+			find ${PDFFolder} -name "*.pdf" -exec sed -i '/allitebooks/d' {} \;
 			rename -f 's/ /-/g' ${PDFFolder}/*.pdf
 			mv ${PDFFolder}/*.pdf ${TargetDir}
 			((Count=0))
@@ -86,6 +87,7 @@ done
 rename -f 's/ /-/g' ${PDFFolder}/*.pdf
 if [ `ls ${PDFFolder} | wc -l` -ne 0 ]
 then
+	find ${PDFFolder} -name "*.pdf" -exec sed -i '/allitebooks/d' {} \;
 	mv ${PDFFolder}/*.pdf ${TargetDir}
 fi
 
