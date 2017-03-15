@@ -501,7 +501,6 @@ How to Do Everything Adobe Illustrator CS4
 SWT JFace in Action
 SpamAssassin
 Stopping Spam
-
 Pro ASP.NET Core MVC, 6th Edition
 IT Security Risk Control Management
 Moving to Responsive Web Design
@@ -634,11 +633,9 @@ Monitoring ElasticSearch
 Securing PHP Apps
 Beginning SQL Queries
 Ubuntu Server Cookbook
-
 Typed PHP
 Windows To Go
 iOS Application Security
-
 Practical Hadoop Migration
 The JPEG 2000 Suite
 Publishing with iBooks Author
@@ -685,7 +682,6 @@ CompTIA A+ Certification All-in-One For Dummies
 Introduction to Java Programming, Brief Version (8 edition)
 SharePoint 2010 Workflows in Action
 Learning CFEngine 3
-
 Microsoft Tabular Modeling Cookbook
 Windows 10
 How to Master CCNP SWITCH
@@ -836,7 +832,6 @@ Pro Spark Streaming
 Beginning Backdrop CMS
 Introducing Linux Distros
 Kali Linux Wireless Penetration Testing Essentials
-
 Creating Google Chrome Extensions
 Spring Persistence with Hibernate, 2nd edition
 Inkscape Starter
@@ -1468,13 +1463,8 @@ Hybrid Cloud For Dummies
 Python for Software Design
 BeagleBone Home Automation Blueprints
 Teach Yourself VISUALLY Laptops, 2nd Edition
-
-
-
-
 Project 2010 For Dummies
 Enterprise Mac Security, 3rd Edition
-
 Introduction to HPC with MPI for Data Science
 R Statistical Application Development by Example Beginner's Guide
 Corona SDK Application Design
@@ -1547,9 +1537,6 @@ Big Data Analytics with Spark
 Beginning Java Game Development with LibGDX
 Beginning Django CMS
 Android TV Apps Development
-
-
-
 Linux Essentials, 2nd Edition
 CSS Floating
 Multipath Effects in GPS Receivers- A Primer
@@ -1580,7 +1567,6 @@ Understanding Industrial Design
 Expert SQL Server 2008 Encryption
 Application Development with Swift
 iOS 9 Programming Fundamentals with Swift
-
 Alfresco Share
 Practical Common LISP
 Quick Guide to Flash Catalyst
@@ -1603,11 +1589,8 @@ Drupal 6 Social Networking
 Learning Articulate Storyline
 Excel 2013 For Dummies
 Visual Studio Lightswitch 2015, 2nd Edition
-
 The Windows 10 Accessibility Handbook
 Microsoft Dynamics NAV 2009 Application Design
-
-
 Learning Apache Thrift
 Jump Start PHP Environment
 Java Persistence with Hibernate
@@ -1622,7 +1605,6 @@ Interaction Design for 3D User Interfaces
 Selling Online with Drupal e-Commerce
 Pro Java Programming, 2nd Edition
 Real World Windows 10 Development, Second Edition
-
 Introducing Meteor
 JavaScript and AJAX For Dummies
 Beginning Oracle Application Express 5
@@ -1633,13 +1615,10 @@ Windows 10 Development Recipes
 Practical Linux Topics
 Troubleshooting Citrix XenApp
 Swift iOS 24-Hour Trainer
-
 SPA Design and Architecture
 The New Relational Database Dictionary
 Meteor in Action
 Mastering RabbitMQ
-
-
 Ionic in Action
 Go in Action
 Getting MEAN with Mongo, Express, Angular, and Node
@@ -1660,16 +1639,11 @@ Building iPhone Apps with HTML, CSS, and JavaScript
 Xamarin Mobile Development for Android Cookbook
 Unity UI Cookbook
 Oracle SOA Suite 12c Administrator's Guide
-
 Mastering LibGDX Game Development
 Linux Shell Scripting Essentials
 Learning Material Design
 Learning Geospatial Analysis with Python
-
-
 Learning Couchbase
-
-
 D3.js By Example
 JavaScript Concurrency
 WordPress Search Engine Optimization, 2nd Edition
@@ -1919,7 +1893,7 @@ Mcsa 70-410 Cert Guide R2
 End-to-End QoS Network Design, 2nd Edition
 TYPO3 Extbase
 Game Design Workshop, 3rd Edition
-I Heart Logs
+I Heart Logs-old
 Designing Mobile Payment Experiences
 Designing for Emerging Technologies
 Scratch For Kids For Dummies
@@ -4000,7 +3974,7 @@ Pro Apache Hadoop, 2nd Edition
 Python for Finance
 Talend for Big Data
 Time Series Databases
-Using Flume
+Using Flume-old
 Agile Data Science
 Apache Accumulo for Developers
 Apache Sqoop Cookbook
@@ -6906,8 +6880,58 @@ PrestaShop Recipes
 Introducing Windows Azure for IT Professionals
 Introducing Autodesk Maya 2015
 Android Programming, 3rd Edition
-HTML5 for Flash Developers
 Microsoft Windows Server 2012 Administration Instant Reference
 Learning Concurrent Programming in Scala, 2nd Edition
 eBay Commerce Cookbook
 Beginning C 2008 Objects
+HTML5 for Flash Developers
+Cisco LAN Switching Configuration Handbook, 2nd Edition
+Data Visualisation with R
+Pro MongoDB Development
+Beginning Power BI
+Handbook of Big Data Technologies
+Introduction to Computer Networking
+Essentials of Computer Architecture, 2nd Edition
+Ubuntu Unleashed 2017 Edition, 12th Edition
+Oracle Database Upgrade and Migration Methods
+TiVo For Dummies
+Pro MERN Stack
+Learning Web-based Virtual Reality
+JSF 1.2 Components
+Microsoft Visio 2010 Step by Step
+Excel Macros For Dummies, 2nd Edition
+Data Science For Dummies, 2nd Edition
+OpenVPN Cookbook, 2nd Edition
+Tabular Modeling with SQL Server 2016 Analysis Services Cookbook
+Mastering Windows Presentation Foundation
+Hacking Marketing
+UNIX for Programmers and Users, 3rd Edition
+OpenShift Cookbook
+Oracle Business Intelligence and Essbase Solutions Guide
+Beginning Adobe Animate CC
+Mastering Symfony
+Beginning Python, 3rd Edition
+Django Project Blueprints
+Mastering IPython 4.0
+PostgreSQL Development Essentials
+QGIS Python Programming Cookbook
+Introduction to Hardware Security and Trust
+Beginning Functional JavaScript
+Getting Started with Raspberry Pi Zero
+Beginning Data Science in R
+3D Game Environments
+Virtual Reality Headsets
+The Internet of Things
+Categorical Data Analysis by Example
+Learning Node, 2nd Edition
+Learning Ratpack
+Data Analytics with Hadoop
+Architecting for Scale
+Advanced Penetration Testing for Highly-Secured Environments, Second Edition
+Effective DevOps
+Building Tools with GitHub
+I Heart Logs
+SVG Essentials, 2nd Edition
+Using Flume
+Web Content Management
+Xamarin Studio for Android Programming
